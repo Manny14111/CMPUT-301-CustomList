@@ -53,7 +53,12 @@ public class CityList {
      */
 
     public void delete(City city) {
-        return;
+        if (cities.contains(city)) {
+            cities.remove(city);
+        } else {
+            throw new IllegalArgumentException();
+
+        }
     }
 
     /**
