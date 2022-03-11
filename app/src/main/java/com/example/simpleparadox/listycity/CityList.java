@@ -43,7 +43,7 @@ public class CityList {
      * Returns True if it cointains the given city, False otherwise
      */
     public boolean hasCity(City city) {
-        return false;
+        return cities.contains(city);
     }
 
     /**
