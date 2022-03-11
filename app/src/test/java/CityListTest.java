@@ -34,4 +34,16 @@ public class CityListTest {
         cityList.delete(city);
         assertFalse(cityList.hasCity(city));
     }
+    @Test
+    public void testCountCities() {
+        //CityList cityList = mockCityList();
+        assertEquals(1, cityList.getCities().size());
+
+        City city = new City("Calgary", "Edmonton");
+        cityList.add(city);
+        assertTrue(cityList.hasCity(city));
+        cityList.delete(city);
+        assertFalse(cityList.hasCity(city));
+        assertEquals(1, cityList.countCities());
+    }
 }
