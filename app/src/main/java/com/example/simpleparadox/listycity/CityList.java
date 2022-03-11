@@ -67,7 +67,11 @@ public class CityList {
      * Returns number of cities in the list
      */
     public int countCities() {
-        return 0;
+        int i = 0;
+        for (City city: cities) {
+            i++;
+        }
+        return i;
     }
 
 }
